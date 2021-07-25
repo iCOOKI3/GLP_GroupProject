@@ -2575,6 +2575,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TT_demo_zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 82bf1fce3999c664d93f8c6def76d0f8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b14953694d54eea4eb66f453e525024c, type: 3}
 --- !u!1001 &690928648
@@ -4874,6 +4879,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TT_demo_zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 82bf1fce3999c664d93f8c6def76d0f8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b14953694d54eea4eb66f453e525024c, type: 3}
 --- !u!1001 &1502474829
@@ -5217,6 +5227,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TT_demo_zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 82bf1fce3999c664d93f8c6def76d0f8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b14953694d54eea4eb66f453e525024c, type: 3}
 --- !u!1001 &1671587314
@@ -5384,6 +5399,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TT_demo_zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 82bf1fce3999c664d93f8c6def76d0f8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b14953694d54eea4eb66f453e525024c, type: 3}
 --- !u!1 &1720112533 stripped
@@ -5939,6 +5959,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TT_demo_zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 82bf1fce3999c664d93f8c6def76d0f8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b14953694d54eea4eb66f453e525024c, type: 3}
 --- !u!1001 &1948459726
