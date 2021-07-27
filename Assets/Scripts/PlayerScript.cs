@@ -19,6 +19,9 @@ public class PlayerScript : MonoBehaviour
     [Tooltip("Starting ammo of the enemy")]
     public int AmmoCount;
 
+    [Tooltip("Starting amount of keys collected")]
+    public int KeyCount;
+
     [Tooltip("Shooting sound effect")]
     public AudioClip ShootingAudioClip;
 
@@ -144,5 +147,14 @@ public class PlayerScript : MonoBehaviour
         GameManager.Instance.UpdateHealth(HealthPoint);
 
         audioSource.PlayOneShot(audioClip);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag ==("Keys"))
+        {
+            KeyCount += 1;
+            Destroy(other.gameObject);
+        }
     }
 }
