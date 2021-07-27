@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour {
     public Text TimeLeftTextbox;
     public string TimeLeftTextPrefix;
 
+    public Text KeysCollectedTextbox;
+
     public GameObject GameOverUI;
 
 
