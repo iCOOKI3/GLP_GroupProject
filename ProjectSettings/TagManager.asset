@@ -7,6 +7,10 @@ TagManager:
   - Wall
   - Enemy
   - Keys
+  - Bullet
+  - FxTemporaire
+  - RangedEnemy
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
@@ -16,8 +20,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - WhatIsGround
+  - WhatIsPlayer
   - 
   - 
   - 

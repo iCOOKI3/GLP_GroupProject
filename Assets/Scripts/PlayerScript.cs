@@ -89,6 +89,10 @@ public class PlayerScript : MonoBehaviour
             {
                 hit.collider.gameObject.GetComponent<EnemyScript>().OnHit(ShootingDamage);
             }
+            else if (hit.collider.gameObject.tag.Equals("RangedEnemy"))
+            {
+                hit.collider.gameObject.GetComponent<RangedEnemiesScript>().OnHit(ShootingDamage);
+            }
         }
 
         audioSource.PlayOneShot(ShootingAudioClip);
@@ -114,6 +118,7 @@ public class PlayerScript : MonoBehaviour
     {
         EnemyScript enemyScript = collision.gameObject.GetComponent<EnemyScript>();
         HealthPoint -= enemyScript.ContactDamage;
+
         GameManager.Instance.UpdateHealth(HealthPoint);
 
         if (HealthPoint <= 0)
@@ -155,6 +160,12 @@ public class PlayerScript : MonoBehaviour
         {
             KeyCount += 1;
             Destroy(other.gameObject);
+        }
+
+        if(other.gameObject.tag == "EnemyBullet")
+        {
+            HealthPoint -= 20;
+            GameManager.Instance.UpdateHealth(HealthPoint);
         }
     }
 }

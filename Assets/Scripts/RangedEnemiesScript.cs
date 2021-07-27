@@ -14,7 +14,11 @@ public class RangedEnemiesScript : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
-    public float health;
+    public float HealthPoint;
+
+    public int ScoreReward;
+
+    public AudioClip DeathAudioClip;
 
     //Patrolling
     public Vector3 walkPoint;
@@ -31,7 +35,7 @@ public class RangedEnemiesScript : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("PlayerObj").transform;
+        player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -82,13 +86,13 @@ public class RangedEnemiesScript : MonoBehaviour
 
         transform.LookAt(player);
 
-        if(!alreadyAttacked)
+        if (!alreadyAttacked)
         {
             //Attack code here
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
 
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
+            rb.AddForce(transform.up * 4f, ForceMode.Impulse);
 
             //
             alreadyAttacked = true;
@@ -103,9 +107,9 @@ public class RangedEnemiesScript : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        HealthPoint -= damage;
 
-        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
+        if (HealthPoint <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
     }
 
     private void DestroyEnemy()
@@ -119,5 +123,21 @@ public class RangedEnemiesScript : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+    }
+
+    public void OnHit(int damage)
+    {
+        HealthPoint -= damage;
+
+        if (HealthPoint <= 0)
+        {
+            Dead();
+        }
+    }
+
+    private void Dead()
+    {
+        GameManager.Instance.UpdateScore(ScoreReward, DeathAudioClip);
+        Destroy(gameObject);
     }
 }
