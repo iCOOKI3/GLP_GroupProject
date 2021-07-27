@@ -1215,6 +1215,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 65725777644730092, guid: 97612e1cc675bd34f8d8b64f92401de3,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.0133352
+      objectReference: {fileID: 0}
+    - target: {fileID: 65725777644730092, guid: 97612e1cc675bd34f8d8b64f92401de3,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.006667614
+      objectReference: {fileID: 0}
+    - target: {fileID: 65725777644730092, guid: 97612e1cc675bd34f8d8b64f92401de3,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -1.3015826e-16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97612e1cc675bd34f8d8b64f92401de3, type: 3}
 --- !u!1 &169900926 stripped
@@ -3167,6 +3182,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 65725777644730092, guid: 97612e1cc675bd34f8d8b64f92401de3,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.0051589
+      objectReference: {fileID: 0}
+    - target: {fileID: 65725777644730092, guid: 97612e1cc675bd34f8d8b64f92401de3,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.0025794506
+      objectReference: {fileID: 0}
+    - target: {fileID: 65725777644730092, guid: 97612e1cc675bd34f8d8b64f92401de3,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 7.120503e-17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97612e1cc675bd34f8d8b64f92401de3, type: 3}
 --- !u!1001 &487232005
@@ -4224,12 +4254,12 @@ PrefabInstance:
     - target: {fileID: 65725777644730092, guid: 97612e1cc675bd34f8d8b64f92401de3,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.1665208
+      value: 1.168033
       objectReference: {fileID: 0}
     - target: {fileID: 65725777644730092, guid: 97612e1cc675bd34f8d8b64f92401de3,
         type: 3}
       propertyPath: m_Center.x
-      value: 0.08326002
+      value: 0.084015846
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97612e1cc675bd34f8d8b64f92401de3, type: 3}
@@ -8979,6 +9009,11 @@ PrefabInstance:
       propertyPath: GameOverUI
       value: 
       objectReference: {fileID: 1911301693815173}
+    - target: {fileID: 114402354200639528, guid: 3db0cc48599e4d6458ee404f8c74f00f,
+        type: 3}
+      propertyPath: RoundTime
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3db0cc48599e4d6458ee404f8c74f00f, type: 3}
 --- !u!1001 &1731217338
