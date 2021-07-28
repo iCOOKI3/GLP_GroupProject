@@ -20,7 +20,7 @@ public class PlayerScript : MonoBehaviour
     public int AmmoCount;
 
     [Tooltip("Starting amount of keys collected")]
-    public int KeyCount;
+    public static int KeyCount;
 
     [Tooltip("Shooting sound effect")]
     public AudioClip ShootingAudioClip;
@@ -159,6 +159,7 @@ public class PlayerScript : MonoBehaviour
         if(other.gameObject.tag ==("Keys"))
         {
             KeyCount += 1;
+            GameManager.Instance.UpdateKeysCollect(KeyCount);
             Destroy(other.gameObject);
         }
 

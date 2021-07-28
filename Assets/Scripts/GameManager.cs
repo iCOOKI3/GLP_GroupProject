@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour {
     public string TimeLeftTextPrefix;
 
     public Text KeysCollectedTextbox;
+    public string KeysCollectedTextPrefix;
 
     public GameObject GameOverUI;
 
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour {
     public bool isGameOver;
     
     private int score;
+    private int KeysCollected;
     private AudioSource audioSource;
 
     // Use this for initialization
@@ -55,7 +57,10 @@ public class GameManager : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
+        KeysCollectedTextbox.GetComponent<Text>().text = "Keys Collected:" + PlayerScript.KeyCount + "/2";
+
         if (isGameOver)
             return;
 
@@ -87,6 +92,13 @@ public class GameManager : MonoBehaviour {
         }
 
         HealthTextbox.text = HealthTextPrefix + health;
+    }
+
+    public void UpdateKeysCollect(int _KeysCollected)
+    {
+        KeysCollected += _KeysCollected;
+        KeysCollectedTextbox.text = KeysCollectedTextPrefix + KeysCollected;
+
     }
 
     public void UpdateTimeLeft()
