@@ -987,7 +987,7 @@ MonoBehaviour:
   DeathAudioClip: {fileID: 8300000, guid: b6e3782b2d59bcd4c926a92b6c51ea26, type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 10
-  timeBetweenAttacks: 2
+  timeBetweenAttacks: 1.5
   sightRange: 20
   attackRange: 7.5
   playerInSightRange: 0
@@ -9285,7 +9285,7 @@ MonoBehaviour:
   DeathAudioClip: {fileID: 8300000, guid: b6e3782b2d59bcd4c926a92b6c51ea26, type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 10
-  timeBetweenAttacks: 2
+  timeBetweenAttacks: 1.5
   sightRange: 20
   attackRange: 7.5
   playerInSightRange: 0
@@ -9458,7 +9458,7 @@ MonoBehaviour:
   DeathAudioClip: {fileID: 8300000, guid: b6e3782b2d59bcd4c926a92b6c51ea26, type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 10
-  timeBetweenAttacks: 2
+  timeBetweenAttacks: 1.5
   sightRange: 20
   attackRange: 7.5
   playerInSightRange: 0
