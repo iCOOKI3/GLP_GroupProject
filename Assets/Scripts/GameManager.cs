@@ -98,7 +98,6 @@ public class GameManager : MonoBehaviour {
     {
         KeysCollected += _KeysCollected;
         KeysCollectedTextbox.text = KeysCollectedTextPrefix + KeysCollected;
-
     }
 
     public void UpdateTimeLeft()
