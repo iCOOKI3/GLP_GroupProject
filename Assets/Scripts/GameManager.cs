@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        KeysCollectedTextbox.GetComponent<Text>().text = "Keys Collected:" + PlayerScript.KeyCount + "/2";
+        KeysCollectedTextbox.GetComponent<Text>().text = "Keys Collected:" + PlayerScript.KeyCount + "/3";
 
         if (isGameOver)
             return;

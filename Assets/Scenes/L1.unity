@@ -982,7 +982,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 512
-  HealthPoint: 100
+  HealthPoint: 200
   ScoreReward: 10
   DeathAudioClip: {fileID: 8300000, guid: b6e3782b2d59bcd4c926a92b6c51ea26, type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
@@ -8632,7 +8632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 410, y: 290}
+  m_AnchoredPosition: {x: 440, y: 290}
   m_SizeDelta: {x: 350, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1631220199
@@ -9030,7 +9030,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 512
-  HealthPoint: 100
+  HealthPoint: 200
   ScoreReward: 10
   DeathAudioClip: {fileID: 8300000, guid: b6e3782b2d59bcd4c926a92b6c51ea26, type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
@@ -9203,7 +9203,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 512
-  HealthPoint: 100
+  HealthPoint: 200
   ScoreReward: 10
   DeathAudioClip: {fileID: 8300000, guid: b6e3782b2d59bcd4c926a92b6c51ea26, type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
@@ -9312,7 +9312,12 @@ PrefabInstance:
     - target: {fileID: 114402354200639528, guid: 3db0cc48599e4d6458ee404f8c74f00f,
         type: 3}
       propertyPath: KeysCollectedTextPrefix
-      value: 'Keys collected:'
+      value: 'Keys collected: 0/3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114402354200639528, guid: 3db0cc48599e4d6458ee404f8c74f00f,
+        type: 3}
+      propertyPath: TimeLeftTextPrefix
+      value: 'Time left:'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3db0cc48599e4d6458ee404f8c74f00f, type: 3}
