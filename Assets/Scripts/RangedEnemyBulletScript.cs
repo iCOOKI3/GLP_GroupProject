@@ -35,6 +35,11 @@ public class RangedEnemyBulletScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         DestroyBullet();
+
+        if(other.gameObject.tag == "Wall")
+        {
+            DestroyBullet();
+        }
     }
 
     private void DestroyBullet()
