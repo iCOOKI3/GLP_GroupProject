@@ -33,6 +33,8 @@ public class TeslaGateScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            //PlayerHealth.HealthPoint -= 5;
+
             StartCoroutine(TimeEntervalBetweenDmg());
         }
     }
@@ -41,6 +43,6 @@ public class TeslaGateScript : MonoBehaviour
     {
         PlayerHealth.HealthPoint -= 5;
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(5f);
     }
 }
