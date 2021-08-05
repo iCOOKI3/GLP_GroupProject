@@ -8,7 +8,11 @@ public class TeslaGateScript : MonoBehaviour
 
     bool DmgOnStart = false;
 
+    public float period = 0.0f;
+
     public GameManager Manager;
+
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +23,9 @@ public class TeslaGateScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        audioSource.Play();
+
         //if(DmgOnStart == true)
         //{
         //    //StartCoroutine(TimeEntervalBetweenDmg());
