@@ -19,12 +19,12 @@ public class TeslaGateScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(DmgOnStart == true)
-        {
-            //StartCoroutine(TimeEntervalBetweenDmg());
-            Debug.Log("Its working");
-            Debug.Log(PlayerHealth.HealthPoint);
-        }
+        //if(DmgOnStart == true)
+        //{
+        //    //StartCoroutine(TimeEntervalBetweenDmg());
+        //    Debug.Log("Its working");
+        //    Debug.Log(PlayerHealth.HealthPoint);
+        //}
 
         GameManager.Instance.UpdateHealth(PlayerHealth.HealthPoint);
     }
