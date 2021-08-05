@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour {
 
     public GameObject GameOverUI;
 
+    public GameObject GameWinUI;
+
 
     public string SceneName;
     [HideInInspector]
@@ -54,6 +56,7 @@ public class GameManager : MonoBehaviour {
         audioSource.Play();
 
         GameOverUI.SetActive(false);
+        GameWinUI.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -127,14 +130,18 @@ public class GameManager : MonoBehaviour {
         Cursor.lockState = CursorLockMode.None;
         GameObject.Find("FPSPlayer").GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = false;
         isGameOver = true;
-        GameOverUI.SetActive(true);
+        //GameOverUI.SetActive(true);
         
         if (isWin)
         {
+            GameWinUI.SetActive(true);
+            GameOverUI.SetActive(false);
             audioSource.PlayOneShot(GameWinSound);
         }
         else
         {
+            GameOverUI.SetActive(true);
+            GameWinUI.SetActive(false);
             audioSource.PlayOneShot(GameLoseSound);
         }
     }
