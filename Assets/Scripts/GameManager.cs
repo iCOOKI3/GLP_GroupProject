@@ -46,8 +46,10 @@ public class GameManager : MonoBehaviour {
     private AudioSource audioSource;
 
     // Use this for initialization
-    void Awake () {
-        if (Instance == null) {
+    void Awake ()
+    {
+        if (Instance == null)
+        {
             Instance = this;
         }
 
@@ -58,9 +60,9 @@ public class GameManager : MonoBehaviour {
         GameOverUI.SetActive(false);
         GameWinUI.SetActive(false);
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update ()
     {
         KeysCollectedTextbox.GetComponent<Text>().text = "Keys Collected:" + PlayerScript.KeyCount + "/2";
 
@@ -174,5 +176,15 @@ public class GameManager : MonoBehaviour {
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void LoadLevel1()
+    {
+        SceneManager.LoadScene("L1");
+    }
+
+    public void LoadLevel2()
+    {
+        SceneManager.LoadScene("L2");
     }
 }
