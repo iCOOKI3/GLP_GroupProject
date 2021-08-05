@@ -18,6 +18,8 @@ public class KeyScript : MonoBehaviour
 
         isTriggered = false;
 
+        PlayerScript.KeyCount = 0;
+
     }
 
     public void SetActivatableKeyDoor(ActivatableDoor _activatableKeyDoor)
