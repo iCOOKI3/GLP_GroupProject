@@ -163,4 +163,9 @@ public class GameManager : MonoBehaviour {
     {
         SceneManager.LoadScene("L2");
     }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
