@@ -8,8 +8,6 @@ public class TeslaGateScript : MonoBehaviour
 
     bool DmgOnStart = false;
 
-    public float period = 0.0f;
-
     public GameManager Manager;
 
     public AudioSource audioSource;
@@ -18,13 +16,18 @@ public class TeslaGateScript : MonoBehaviour
     void Start()
     {
         DmgOnStart = true;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        audioSource.Play();
+        if(audioSource != null)
+        {
+            //audioSource.Play();
+        }
 
         //if(DmgOnStart == true)
         //{
